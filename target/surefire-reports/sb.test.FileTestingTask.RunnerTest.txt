@@ -1,0 +1,28 @@
+-------------------------------------------------------------------------------
+Test set: sb.test.FileTestingTask.RunnerTest
+-------------------------------------------------------------------------------
+Tests run: 16, Failures: 4, Errors: 0, Skipped: 0, Time elapsed: 0.427 sec <<< FAILURE!
+Then Check row 6 for 123-$/* equals(| 6 | 123-$/* |)  Time elapsed: 0.004 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Comparing rows:  expected:<123-[$/*]> but was:<123-[/*"]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at sb.test.FileTestingTask.FileTest.compareRows(FileTest.java:48)
+	at ?.Then Check row 6 for 123-$/* equals(File.feature:9)
+
+| 6 | 123-$/* |  Time elapsed: 0.005 sec  <<< FAILURE!
+org.junit.ComparisonFailure: Comparing rows:  expected:<123-[$/*]> but was:<123-[/*"]>
+	at org.junit.Assert.assertEquals(Assert.java:115)
+	at sb.test.FileTestingTask.FileTest.compareRows(FileTest.java:48)
+	at ?.Then Check row 6 for 123-$/* equals(File.feature:9)
+
+Then Check row 20 for rytryt equals(| 20 | rytryt |)  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: There is no row #20
+	at org.junit.Assert.fail(Assert.java:88)
+	at sb.test.FileTestingTask.FileTest.compareRows(FileTest.java:50)
+	at ?.Then Check row 20 for rytryt equals(File.feature:9)
+
+| 20 | rytryt |  Time elapsed: 0 sec  <<< FAILURE!
+java.lang.AssertionError: There is no row #20
+	at org.junit.Assert.fail(Assert.java:88)
+	at sb.test.FileTestingTask.FileTest.compareRows(FileTest.java:50)
+	at ?.Then Check row 20 for rytryt equals(File.feature:9)
+
